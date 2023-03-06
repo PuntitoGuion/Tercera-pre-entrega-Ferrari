@@ -4,4 +4,4 @@
 
 *Sin embargo, para buscar un producto, se debe agregar alguno a la base de datos, como ejemplo esta "Iphone 7"*
 
-![](https://prnt.sc/7r6gdfPsBNmW)
+![django](https://prnt.sc/7r6gdfPsBNmW)
