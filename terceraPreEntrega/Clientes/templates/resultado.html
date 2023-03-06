@@ -1,0 +1,18 @@
+{% extends "inicio.html" %}
+{% load static %}
+
+{% block heredarHtml %}
+
+    <h3>Resultados de la búsqueda: </h3>
+        
+    {% if productos  %}
+
+    <ul>
+        {% for producto in productos %}
+            <li>{{producto.nombre}}</li>
+            <li>{{producto.precio}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+{% endblock %}

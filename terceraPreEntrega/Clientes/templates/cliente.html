@@ -1,0 +1,23 @@
+{% extends "inicio.html" %}
+{% load static %}
+
+{% block heredarHtml %}
+
+    {% if miFormulario.errors %}
+
+    <p style="color: red;"> Estan mal los datos, revisar</p>
+
+    {% endif %}
+
+    <form action="" method="POST">{% csrf_token %}
+        <h3> Agregar un cliente a la base de datos: </h3>
+        <table>
+
+            {{ miFormulario.as_table }}
+
+        </table>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+{% endblock %}
