@@ -43,7 +43,7 @@ def vendedor(request):
             informacion = miFormulario.cleaned_data
 
             producto = Vendedor(nombre=informacion['nombre'],
-                            precio=informacion['apellido'],
+                            apellido=informacion['apellido'],
                             puestoDeTrabajo=informacion['puestoDeTrabajo'])
 
             producto.save()
